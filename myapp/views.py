@@ -1,15 +1,15 @@
 from django.shortcuts import render
-from rest_framework.decorators import api_view
+#from rest_framework.decorators import api_view
 import json
-from .models import Students
-from rest_framework import status
-from rest_framework.response import Response
+#from .models import Students
+#from rest_framework import status
+#from rest_framework.response import Response
 #from myapp.serializers import StudentsSerializer
 
 
 # Create your views here.
 
-@api_view(["POST"])
+#@api_view(["POST"])
 def regStudent(request):
     try:
         print("post")
@@ -22,7 +22,7 @@ def regStudent(request):
     except BaseException as e:
         print(e)
 
-@api_view(["PUT"])
+#@api_view(["PUT"])
 def updateStudent(request):
   try:
     print("put")
@@ -36,7 +36,7 @@ def updateStudent(request):
   except BaseException as e:
     print(e)
 
-@api_view(["GET"])
+#@api_view(["GET"])
 def getStudents(request):
     try:
         print("get")
@@ -46,7 +46,7 @@ def getStudents(request):
     except BaseException as e:
         print(e)
 
-@api_view(["DELETE"])
+#@api_view(["DELETE"])
 def delStudent(request):
    try:
     print("delete")
@@ -55,7 +55,7 @@ def delStudent(request):
     #  return Response("Success", status=status.HTTP_201_CREATED)
    except BaseException as e:
      print(e)
-     return Response("Not Deleted", status=status.HTTP_400_BAD_REQUEST)
+     #return Response("Not Deleted", status=status.HTTP_400_BAD_REQUEST)
 
 # Create your views here.
 
