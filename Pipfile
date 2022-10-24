@@ -8,6 +8,8 @@ django = "*"
 gunicorn = "*"
 whitenoise = "*"
 djongo = "*"
+pymongo = "*"
+dnspython = "*"
 
 [dev-packages]
 
