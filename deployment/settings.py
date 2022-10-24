@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'deployment.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'djongo',
+        'ENGINE': 'djongo',
         # 'NAME': 'school',
         #'ENFORCE_SCHEMA': False,
         'CLIENT': {
