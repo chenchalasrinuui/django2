@@ -10,6 +10,7 @@ whitenoise = "*"
 djongo = "*"
 pymongo = "*"
 dnspython = "*"
+djangorestframework = "*"
 
 [dev-packages]
 
