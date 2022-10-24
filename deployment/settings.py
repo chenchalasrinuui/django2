@@ -87,16 +87,16 @@ WSGI_APPLICATION = 'deployment.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'djongo',
-#         'NAME': 'school',
-#         'ENFORCE_SCHEMA': False,
-#         'CLIENT': {
-#                 'host': 'mongodb+srv://stepup:stepup@cluster0.y2gqfip.mongodb.net/?retryWrites=true&w=majority'
-#         }  
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'school',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+                'host': 'mongodb+srv://stepup:stepup@cluster0.y2gqfip.mongodb.net/?retryWrites=true&w=majority'
+        }  
+    }
+}
 
 
 # Password validation
