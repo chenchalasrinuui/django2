@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    #'rest_framework',
     'myapp'
 ]
 
@@ -87,16 +87,16 @@ WSGI_APPLICATION = 'deployment.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'school',
-        'ENFORCE_SCHEMA': False,
-        'CLIENT': {
-                'host': 'mongodb+srv://stepup:stepup@cluster0.y2gqfip.mongodb.net/?retryWrites=true&w=majority'
-        }  
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'school',
+#         'ENFORCE_SCHEMA': False,
+#         'CLIENT': {
+#                 'host': 'mongodb+srv://stepup:stepup@cluster0.y2gqfip.mongodb.net/?retryWrites=true&w=majority'
+#         }  
+#     }
+# }
 
 
 # Password validation
@@ -117,13 +117,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
-}
+# REST_FRAMEWORK = {
+#     # Use Django's standard `django.contrib.auth` permissions,
+#     # or allow read-only access for unauthenticated users.
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+#     ]
+# }
 
 
 # Internationalization
