@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'rest_framework',
+    'rest_framework',
     'myapp'
 ]
 
@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'deployment.wsgi.application'
 
 DATABASES = {
     'default': {
-         'ENGINE': 'MongoEngine',
+        # 'ENGINE': 'djongo',
         # 'NAME': 'school',
         #'ENFORCE_SCHEMA': False,
         'CLIENT': {
